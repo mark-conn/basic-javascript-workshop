@@ -169,8 +169,13 @@ function largest(array) {
 largest([1,3,4,55,4,7]);
 largest([3,52,3,23]);
 
-
-
+//takes an array, returns a filtered array with only truthy values
+function truthyOnly(array) {
+  var filteredArray = array.filter(Boolean);
+  return filteredArray;
+}
+    
+truthyOnly([NaN, 1, 2, false, 0, 3]);
 
 
 
