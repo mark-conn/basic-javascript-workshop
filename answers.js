@@ -23,3 +23,21 @@ var charPosn = function(string, number) {
 }
 charPosn("Dingus", 1);
 charPosn("Dingus", 5);
+
+/*takes two numbers and adds them together. 
+if not a number, function will concatenate */
+var add = function(x,y) {
+        return x + y;
+}
+add(8,9);
+add("string", 9);
+
+
+
+
+
+
+
+
+
+
