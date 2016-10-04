@@ -77,9 +77,15 @@ switchOps(3,3, "mult");
 switchOps(12,4, "div");
 
 
+//takes a string and a number, returns the string multiplied by number
+var repeat = function(string, number) {
+    return string.repeat(number);
+    
+}
 
-
-
+repeat("dingus",9);
+repeat("Im a doctor, too ", 9);
+repeat("Check out Dr Steve Brule on Youtube :) ", 3);
 
 
 
