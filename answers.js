@@ -32,6 +32,14 @@ var add = function(x,y) {
 add(8,9);
 add("string", 9);
 
+//returns the product of two number arguments.  If arguments are not numbers, will return NaN
+var product = function(x,y) {
+    return x * y;
+    
+}
+
+product(3,3);
+product("string",3);
 
 
 
