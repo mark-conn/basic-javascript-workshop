@@ -138,3 +138,37 @@ function biggest(string) {
 }
 biggest("huuuuuge, this is tiny");
 biggest("drews characters are way too small");
+
+
+//takes a phrase, returns every word with first letter capitalized
+function capitalize(string) {
+    
+    var stringarr = string.split(' ');
+    var newArray = [];
+    for(var i = 0; i < stringarr.length; i++) {
+        newArray.push(stringarr[i].charAt(0).toUpperCase() +  stringarr[i].slice(1).toLowerCase()) 
+        
+    }
+
+    return newArray.join(' ');
+};
+capitalize("yO dUde Im pREtty lIT");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
