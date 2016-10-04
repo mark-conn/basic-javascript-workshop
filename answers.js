@@ -179,7 +179,19 @@ truthyOnly([NaN, 1, 2, false, 0, 3]);
 
 
 
+//takes an array of numbers, returns the sum of all numbers inside
+function arraySum(array) {
+    var newArray = array.filter(Number);
+    var totalSum = 0;
+        for(var i = 0; i < newArray.length; i++) {
+            totalSum += newArray[i];
+        
+        }
+    
+    return totalSum;
+}
 
+arraySum([4,5, "string", 4]);
 
 
 
