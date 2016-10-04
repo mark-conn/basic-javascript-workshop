@@ -13,3 +13,13 @@ var lastChar = function(string) {
 }
 lastChar("Mark");
 lastChar("Kitching");
+
+/*takes a string and number, returns character at the position of the
+number argument, indexing from 0 */
+
+var charPosn = function(string, number) {
+    return string.charAt(number);
+
+}
+charPosn("Dingus", 1);
+charPosn("Dingus", 5);
