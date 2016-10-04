@@ -222,6 +222,49 @@ function notShared(arr1, arr2) {
 notShared([1,2,3], [3,4,5,6]);
 
 
+/*takes an array and function as arguments.  Returns a new array that maps every element of
+input array through the function received
+*/
+function loop(arr, func) {
+    var newArray = [];
+        for(var i=0; i < arr.length; i++) {
+        
+            newArray.push(func(arr[i]));
+        
+        }
+    return newArray;
+    
+}
+
+loop([1,2,3], function(n) {
+   return n + 1;
+    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
