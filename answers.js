@@ -123,3 +123,18 @@ function factorial(number) {
 
 factorial(5);
 factorial(1);
+
+
+//takes a phrase, returns its longest word
+function biggest(string) {
+    var longest = string.split(' ').sort(function(a, b) {
+        
+        return b.length - a.length;
+        
+    }) ;
+        
+    
+    return longest[0];
+}
+biggest("huuuuuge, this is tiny");
+biggest("drews characters are way too small");
