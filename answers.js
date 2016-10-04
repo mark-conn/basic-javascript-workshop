@@ -101,3 +101,25 @@ function reverse(string) {
 reverse("hello");
 reverse("steve brule");
 
+//takes a number and returns its factorial
+function factorial(number) {
+    
+    if(number === (0 || 1)) {
+        return 1;
+        
+    } else 
+    
+        {
+    
+        for(var i= number -1; i >= 1; i--) {
+            number = number * i;
+        
+        }
+    
+    }
+    
+    return number;
+}
+
+factorial(5);
+factorial(1);
