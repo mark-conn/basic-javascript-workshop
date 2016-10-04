@@ -41,6 +41,40 @@ var product = function(x,y) {
 product(3,3);
 product("string",3);
 
+/* takes two numbers and a string.  If string says 'add', returns
+sum of numbers.  If string says 'subtract', returns difference.
+If string says 'mult', returns product.  If string says 'div', returns
+ratio.  Otherwise returns zero
+*/
+
+var switchOps = function(num1, num2, string) {
+    switch(string) {
+        case 'add':
+            return num1 + num2;
+            break;
+        case 'subtract':
+            if(num1 >= num2) {
+                return num1 - num2;
+            } else {
+                return num2 - num1;
+            }
+            break;
+        case 'mult':
+            return num1 * num2;
+            break;
+        case 'div':
+            return num1 / num2;
+            break;
+        default:
+            return 0;
+    }
+    
+};
+switchOps(2,2,"add");
+switchOps(2,2, "subtract");
+switchOps(2,4, "subtract");
+switchOps(3,3, "mult");
+switchOps(12,4, "div");
 
 
 
