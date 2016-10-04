@@ -87,5 +87,17 @@ repeat("dingus",9);
 repeat("Im a doctor, too ", 9);
 repeat("Check out Dr Steve Brule on Youtube :) ", 3);
 
+//takes a string, returns string reversed using recursion
 
+function reverse(string) {
+    if(string === '') {
+        return '';
+    } 
+    else {
+        return reverse(string.substr(1)) + string.charAt(0);
+    }
+    
+}
+reverse("hello");
+reverse("steve brule");
 
