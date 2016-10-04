@@ -156,7 +156,18 @@ capitalize("yO dUde Im pREtty lIT");
 
 
 
+//returns the largest number in an array
+function largest(array) {
+    array.sort(function(a,b) {
+        return b - a;
+        
+    })
+    
+    return array[0]
+}
 
+largest([1,3,4,55,4,7]);
+largest([3,52,3,23]);
 
 
 
